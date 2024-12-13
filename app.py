@@ -39,8 +39,8 @@ def main(args):
         tag_img_path = os.path.join(args.caption_imgs_dir, tag_img_name)
         tag_record_dict[tag_img_name] = pipes_tag(tag_img_path)
 
-    with open(args.record_caption_json_path, 'w', encoding='utf-8') as file:
-        file.write(json.dumps(tag_record_dict, indent=4, ensure_ascii=False))
+        with open(args.record_caption_json_path, 'w', encoding='utf-8') as file:
+            file.write(json.dumps(tag_record_dict, indent=4, ensure_ascii=False))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="PuLID for FLUX.1-dev")
