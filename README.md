@@ -14,6 +14,8 @@ pip install -e ".[train]"
 cd ../..
 pip install -r requirements.txt
 ```
+## Models
+download [SmilingWolf_wd-swinv2-tagger-v3](https://huggingface.co/SmilingWolf/wd-swinv2-tagger-v3), [fancyfeast_joytag](https://huggingface.co/fancyfeast/joytag), [fancyfeast_llama-joycaption-alpha-two-hf-llava](https://huggingface.co/fancyfeast/llama-joycaption-alpha-two-hf-llava), [llama3-llava-next-8b](https://huggingface.co/lmms-lab/llama3-llava-next-8b), and revise ```config.py```
 ## Run
 ```
 bash app.sh
