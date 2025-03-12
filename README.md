@@ -14,9 +14,16 @@ pip install -e ".[train]"
 cd ../..
 pip install -r requirements.txt
 ```
-## Models
-download [SmilingWolf_wd-swinv2-tagger-v3](https://huggingface.co/SmilingWolf/wd-swinv2-tagger-v3), [fancyfeast_joytag](https://huggingface.co/fancyfeast/joytag), [fancyfeast_llama-joycaption-alpha-two-hf-llava](https://huggingface.co/fancyfeast/llama-joycaption-alpha-two-hf-llava), [llama3-llava-next-8b](https://huggingface.co/lmms-lab/llama3-llava-next-8b), and revise ```config.py```
+## Download models
+| model name | model download url |
+|------|-----------|
+|WDTagger|[SmilingWolf_wd-swinv2-tagger-v3](https://huggingface.co/SmilingWolf/wd-swinv2-tagger-v3)|
+|JoyTag|[fancyfeast_joytag](https://huggingface.co/fancyfeast/joytag)|
+|LlamaJoycaptionAlphaTwo|[fancyfeast_llama-joycaption-alpha-two-hf-llava](https://huggingface.co/fancyfeast/llama-joycaption-alpha-two-hf-llava)|
+|LLaVANeXT|[llama3-llava-next-8b](https://huggingface.co/lmms-lab/llama3-llava-next-8b)|
+then specifie the ```caption_model_paths``` in ```config.py```
 ## Run
+Specifie the ```caption_model_names``` in ```app.sh```, separated by ```,```
 ```
 bash app.sh
 ```
