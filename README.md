@@ -21,6 +21,7 @@ pip install -r requirements.txt
 |JoyTag|[fancyfeast_joytag](https://huggingface.co/fancyfeast/joytag)|
 |LlamaJoycaptionAlphaTwo|[fancyfeast_llama-joycaption-alpha-two-hf-llava](https://huggingface.co/fancyfeast/llama-joycaption-alpha-two-hf-llava)|
 |LLaVANeXT|[llama3-llava-next-8b](https://huggingface.co/lmms-lab/llama3-llava-next-8b)|
+
 then specifie the ```caption_model_paths``` in ```config.py```
 ## Run
 Specifie the ```caption_model_names``` in ```app.sh```, separated by ```,```
