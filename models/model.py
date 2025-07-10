@@ -293,8 +293,8 @@ class LlamaJoycaptionAlphaTwo():
         # Load JoyCaption
         # bfloat16 is the native dtype of the LLM used in JoyCaption (Llama 3.1)
         # device_map=0 loads the model into the first GPU
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_dir, use_fast=True)
-        self.llava_model = LlavaForConditionalGeneration.from_pretrained(self.model_dir, torch_dtype="bfloat16", device_map=0)
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_dir, use_fast=True, local_files_only=True)
+        self.llava_model = LlavaForConditionalGeneration.from_pretrained(self.model_dir, torch_dtype="bfloat16", device_map=0, local_files_only=True)
         self.llava_model.eval()
 
     def __call__(self, img_path):

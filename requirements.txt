@@ -1,3 +1,8 @@
+torch==2.7.1
+torchvision==0.22.1
+# pip install torchvision==0.21.0+cu124 --index-url https://download.pytorch.org/whl/cu124
 onnxruntime-gpu==1.18.1
 gradio==4.36.1
 transformers==4.46.2
+einops==0.8.1
+accelerate==0.26.0

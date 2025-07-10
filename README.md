@@ -2,6 +2,7 @@
 ImageTagger: A collection of image tagging methods.
 ## Install
 ```
+export HF_ENDPOINT=https://hf-mirror.com # It may be necessary to connect to the Internet and install it automatically: openai/clip-vit-large-patch14
 git clone https://github.com/RobertLau666/ImageTagger.git
 
 conda create -n imagetagger python=3.10
